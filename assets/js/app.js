@@ -2,38 +2,50 @@
 
   var $btn    = $('button'),
       $wrap   = $('.wrap-content'),
-      $db     = $('main').data('db');
+      $dbUrl  = $('main').data('db'),
+      $db,
+      id,
+      $d = new Date(),
+      $month = $d.getMonth();
 
 
-  //------ load db and store it. Set button labels
+
+  //------ load $db and store it. Set button labels
   $.ajax({
-      url: $db,
+      url: $dbUrl,
       context: document.body,
       contentType: 'application/json',
       dataType: 'json',
       type: 'GET'
     }).success(function(data) {
-      db = data;
-      setLabels(db)
+      $db = data;
+      setLabels($db);
     });
 
-  function setLabels(db){
+  function setLabels($db){
     for (var i = 0; i < $btn.length; i++) {
-      $btn[i].innerText = db[i].label;
+      $btn[i].innerText = $db[i].label;
     }
   }
 
 
-  //------- render proper content for each button
+  //------- button actions
   $btn.on('click', function() {
-    var $thisId = $(this).attr('id'),
-        $tpl = "";
+    var $thisId = $(this).attr('id');
+    render($thisId);
+  });
 
-    for (var i = 0; i < db[$thisId].content.length; i++) {
-      $tpl += '<a href="#" class="item">' + db[$thisId].content[i] + '</a>';
+
+  //------- render content
+  function render(id) {
+    var $tpl = "";
+
+    for (var i = 0; i < $db[id].content.length; i++) {
+      $tpl += '<a href="#" class="item">' + $db[id].content[i] + '</a>';
     }
 
-    $wrap.html($tpl)
-  });
+    $wrap.html($tpl);
+  }
+
 
 })();
