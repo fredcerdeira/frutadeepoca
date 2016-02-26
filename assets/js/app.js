@@ -12,15 +12,16 @@
 
   //------ load $db and store it. Set button labels
   $.ajax({
-      url: $dbUrl,
-      context: document.body,
-      contentType: 'application/json',
-      dataType: 'json',
-      type: 'GET'
-    }).success(function(data) {
-      $db = data;
-      setLabels($db);
-    });
+    url: $dbUrl,
+    context: document.body,
+    contentType: 'application/json',
+    dataType: 'json',
+    type: 'GET'
+  }).success(function(data) {
+    $db = data;
+    setLabels($db);
+    render($month);
+  });
 
   function setLabels($db){
     for (var i = 0; i < $btn.length; i++) {
@@ -46,6 +47,5 @@
 
     $wrap.html($tpl);
   }
-
 
 })();
