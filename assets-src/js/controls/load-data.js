@@ -36,6 +36,8 @@ var loadData = {
       for (var i = 0; i < $btn.length; i++) {
         $btn[i].innerText = $db[i].label;
       }
+
+      $('#'+ $month ).addClass('active');
     }
 
 
@@ -43,6 +45,8 @@ var loadData = {
     $btn.on('click', function() {
       var $thisId = $(this).attr('id');
       render($thisId);
+      $btn.removeClass('active');
+      $(this).addClass('active');
     });
 
 
@@ -57,7 +61,10 @@ var loadData = {
       $wrap.html($tpl);
     }
 
-    
+
+
+
+
   }
 
 
