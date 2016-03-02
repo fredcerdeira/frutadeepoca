@@ -54,8 +54,8 @@ var loadData = {
     function render(id) {
       var $tpl = "";
 
-      for (var i = 0; i < $db[id].content.length; i++) {
-        $tpl += '<a href="#" class="item">' + $db[id].content[i] + '</a>';
+      for (var i = 0; i < $db[id].titles.length; i++) {
+        $tpl += '<a href="#" class="item ' + $db[id].figures[i]+ '">' + $db[id].titles[i] + '</a>';
       }
 
       $wrap.html($tpl);

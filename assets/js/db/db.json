@@ -2,61 +2,73 @@
   {
     "id": 0,
     "label": "Janeiro",
-    "content": ["maçã", "amendoa", "limão"]
+    "titles": ["maçã", "amendoa", "limão"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 1,
     "label": "Fevereiro",
-    "content": ["laranja", "banana", "melancia"]
+    "titles": ["laranja", "banana", "melancia"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 2,
     "label": "Março",
-    "content": ["ass", "ccc", "dd"]
+    "titles": ["ass", "ccc", "dd"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 3,
     "label": "Abril",
-    "content": ["xx", "ccc", "dd"]
+    "titles": ["xx", "ccc", "dd"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 4,
     "label": "Maio",
-    "content": ["uu", "ccc", "dd"]
+    "titles": ["uu", "ccc", "dd"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 5,
     "label": "Junho",
-    "content": ["kkk", "ccc", "dd"]
+    "titles": ["kkk", "ccc", "dd"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 6,
     "label": "Julho",
-    "content": ["uu", "ccc", "dd"]
+    "titles": ["uu", "ccc", "dd"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 7,
     "label": "Agosto",
-    "content": ["ff", "ccc", "dd"]
+    "titles": ["ff", "ccc", "dd"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 8,
     "label": "Setembro",
-    "content": ["www", "ccc", "dd"]
+    "titles": ["www", "ccc", "dd"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 9,
     "label": "Outubro",
-    "content": ["zz", "ccc", "dd"]
+    "titles": ["zz", "ccc", "dd"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 10,
     "label": "Novembro",
-    "content": ["rr", "ccc", "dd"]
+    "titles": ["rr", "ccc", "dd"],
+    "figures": ["apple", "amendoa", "limao"]
   },
   {
     "id": 11,
     "label": "Dezembro",
-    "content": ["uu", "ccc", "dd"]
+    "titles": ["uu", "ccc", "dd"],
+    "figures": ["apple", "amendoa", "limao"]
   }
 ]
