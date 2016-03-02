@@ -9,7 +9,7 @@
   "author": "@fredcerdeira",
   "license": "ISC",
   "dependencies": {
-    "jquery": "~1.11.3"
+    "jquery": "~2.2.1"
   },
   "devDependencies": {
     "gulp": "~3.8.11",
